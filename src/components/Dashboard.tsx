@@ -1,7 +1,6 @@
-"use client";
 // src/components/Dashboard.tsx
+"use client";
 import React, { useState } from "react";
-// import DashboardHeader from "./DashboardHeader";
 import TopCards from "./TopCards"; // Path is correct relative to Dashboard.tsx
 import LoanInformation from "./LoanInformation"; // Path is correct relative to Dashboard.tsx
 

@@ -1,7 +1,10 @@
-// src/app/get-started/page.tsx
+// src/app/dashboard/page.tsx
+import dynamic from "next/dynamic";
 
-import Dashboard from "@/components/Dashboard";
+const DashboardWithNoSSR = dynamic(() => import("@/components/Dashboard"), {
+  ssr: false,
+});
 
-export default function GetStartedPage() {
-  return <Dashboard />;
+export default function DashboardPage() {
+  return <DashboardWithNoSSR />;
 }
